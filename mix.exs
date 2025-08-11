@@ -92,7 +92,7 @@ defmodule Astarte.VMQ.Plugin.Mixfile do
       {:pretty_log, "~> 0.1"},
       {:horde, "~> 0.9"},
       {:dialyxir, "~> 1.4", only: [:dev, :ci], runtime: false},
-      {:xandra, "~> 0.14"},
+      {:xandra, github: "noaccOS/xandra", branch: "disconnect-error", override: true},
       {:astarte_generators, github: "astarte-platform/astarte_generators", only: [:dev, :test]},
       {:mimic, "~> 1.10", only: :test},
       {:mox, "~> 1.0", only: :test}
